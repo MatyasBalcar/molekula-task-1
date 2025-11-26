@@ -12,7 +12,7 @@ class SPCExtractor:
     def _extract_section(self, current_section_id):
         """
         (interní)
-        Extrahuje kapitolu (třeba 4.3 kde jsou alergie nbeo 4.2 kde je věk), zastaví se u další kapitoly
+        Extrahuje kapitolu (třeba 4.3 kde jsou alergie nebo 4.2 kde je věk), zastaví se u další kapitoly
         :param current_section_id: id kapitoly, eg: 4.2, 4.3
         :return: kapitolu (str)
         """
