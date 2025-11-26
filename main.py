@@ -6,7 +6,7 @@ from pypdf import PdfReader
 
 class SPCExtractor:
     def __init__(self, raw_text):
-        # normalizace textu
+        # normalizace textu (tohle možná nepotřebuju ale nevěřím pdf)
         self.text = re.sub(r'\s+', ' ', raw_text).strip()
 
     def _extract_section(self, current_section_id):
@@ -110,7 +110,7 @@ class SPCExtractor:
 
 def parse(path):
     """
-    POarsne pdf podle pathy
+    Parsne pdf podle pathy
     :param path: path na pdf
     :return: text pdfka (str)
     """
